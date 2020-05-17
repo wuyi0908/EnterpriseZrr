@@ -1,0 +1,65 @@
+/*
+*外部样式表
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(244,244,246);
+    padding-top:44px;
+    padding-bottom: 50px;
+}
+/*定位：固定定位
+ 确定元素的位置（xy坐标）
+ 确定元素宽高
+ 加个螺丝钉
+ 把被遮挡的元素露出来
+*/
+header{
+    background: rgb(40,133,202);
+    color: white;
+    text-align: center;
+    line-height: 44px;
+    font-size: 18px;
+
+    left:0;
+    top:0;
+    width:100%;
+
+    position: fixed;
+}
+.DS_second_section img{
+    width: 100%;
+    margin-bottom: -6px;
+}
+footer{
+    display: table;
+    width: 100%;
+    background: black;
+    height: 49px;
+
+    left:0;
+    bottom:0;
+    width:100%;
+
+    position: fixed;
+}
+/* 成行时 针对内部的标签控制 display:table-cell ，width：宽度值*/
+footer a{
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+footer a img{
+    width: 18px;
+}
+/* display:block让内联标签变成块联标签，可以独立成行*/
+footer a span{
+    display: block;
+    font-size: 12px;
+    color: white;
+}
